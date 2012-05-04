@@ -8,7 +8,7 @@
 # install this to the correct location by running the project's main `rake`
 # task.
 [user]
-        name = Zach Holman
+        name = Brad Taylor
         email = your@example.com
 [alias]
         co = checkout
@@ -17,15 +17,15 @@
         rank-contributers = !$ZSH/bin/git-rank-contributers
         count   = !git shortlog -sn
 [color]
-        diff = auto
+        diff = false
         status = auto
         branch = auto
 [core]
         excludesfile = ~/.gitignore
-        editor = mate -w
+        pager = view -
 [apply]
         whitespace = nowarn
 [github]
-        user = holman
+        user = btaylor
 [mergetool]
         keepBackup = false
