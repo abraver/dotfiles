@@ -1,21 +1,19 @@
-set noswapfile
+" ----------------------------------------------------------------------------
+"  General
+" ----------------------------------------------------------------------------
+
+set modelines=0            " Prevent modelines from being evaluated
+set nobackup		   " Don't keep a backup file
+set nocompatible	   " Use Vim defaults instead of 100% vi compatibility
+set history=50		   " keep 50 lines of command line history
+set viminfo='20,\"1000	   " read/write a .viminfo file, don't store more than
 
 " ----------------------------------------------------------------------------
 "  Text Formatting
 " ----------------------------------------------------------------------------
 
-set autoindent             " automatic indent new lines
-set smartindent            " be smart about it
-inoremap # X<BS>#
-set nowrap                 " do not wrap lines
-set softtabstop=2          " yep, two
-set shiftwidth=2           " ..
-set tabstop=4
-set expandtab              " expand tabs to spaces
-set nosmarttab             " fuck tabs
+set backspace=indent,eol,start	" more powerful backspacing
 set formatoptions+=n       " support for numbered/bullet lists
-"set textwidth=80           " wrap at 80 chars by default
-set virtualedit=block      " allow virtual edit in visual block ..
 
 " ----------------------------------------------------------------------------
 "  Remapping
@@ -48,10 +46,10 @@ inoremap <Up> <C-o>gk
 "  UI
 " ----------------------------------------------------------------------------
 
+syntax on                  " turn on syntax highlighting
 set ruler                  " show the cursor position all the time
 set noshowcmd              " don't display incomplete commands
 set nolazyredraw           " turn off lazy redraw
-set number                 " line numbers
 set wildmenu               " turn on wild menu
 set wildmode=list:longest,full
 set ch=2                   " command line height
@@ -61,7 +59,6 @@ set shortmess=filtIoOA     " shorten messages
 set report=0               " tell us about changes
 set nostartofline          " don't jump to the start of line when scrolling
 
-
 " ----------------------------------------------------------------------------
 " Visual Cues
 " ----------------------------------------------------------------------------
@@ -69,11 +66,17 @@ set nostartofline          " don't jump to the start of line when scrolling
 set showmatch              " brackets/braces that is
 set mat=5                  " duration to show matching brace (1/10 sec)
 set incsearch              " do incremental searching
-set laststatus=2           " always show the status line
 set ignorecase             " ignore case when searching
+set smartcase              " ignore case when searching
 set nohlsearch             " don't highlight searches
 set visualbell             " shut the fuck up
 
+" ---------------------------------------------------------------------------
+"  Autocomplete
+" ---------------------------------------------------------------------------
+
+set wildmode=longest:full  " Make vim autocompletion more like bash
+set wildmenu
 
 " ---------------------------------------------------------------------------
 "  Strip all trailing whitespace in file
@@ -83,3 +86,26 @@ function! StripWhitespace ()
     exec ':%s/ \+$//gc'
 endfunction
 map ,s :call StripWhitespace ()<CR>
+
+" ---------------------------------------------------------------------------
+"  Set indention modes for other types of files
+" ---------------------------------------------------------------------------
+
+if expand("%:p") =~ ".py$" || expand("%:p") =~ ".rb$"
+  set expandtab
+
+  " Make shift-tab insert real tabs
+  inoremap <S-Tab> <C-V><Tab>
+endif
+
+if expand("%:p") =~ ".py$" || expand("%:p") =~ ".cfg$"
+  set ts=4
+  set sts=4
+  set sw=4
+endif
+
+if expand("%:p") =~ ".rb$"
+  set ts=2
+  set sts=2
+  set sw=2
+endif
