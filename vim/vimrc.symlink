@@ -8,6 +8,8 @@ set nocompatible	   " Use Vim defaults instead of 100% vi compatibility
 set history=50		   " keep 50 lines of command line history
 set viminfo='20,\"1000	   " read/write a .viminfo file, don't store more than
 
+filetype plugin on         " enable filetype plugin
+
 " ----------------------------------------------------------------------------
 "  Text Formatting
 " ----------------------------------------------------------------------------
@@ -86,26 +88,3 @@ function! StripWhitespace ()
     exec ':%s/ \+$//gc'
 endfunction
 map ,s :call StripWhitespace ()<CR>
-
-" ---------------------------------------------------------------------------
-"  Set indention modes for other types of files
-" ---------------------------------------------------------------------------
-
-if expand("%:p") =~ ".py$" || expand("%:p") =~ ".rb$"
-  set expandtab
-
-  " Make shift-tab insert real tabs
-  inoremap <S-Tab> <C-V><Tab>
-endif
-
-if expand("%:p") =~ ".py$" || expand("%:p") =~ ".cfg$"
-  set ts=4
-  set sts=4
-  set sw=4
-endif
-
-if expand("%:p") =~ ".rb$"
-  set ts=2
-  set sts=2
-  set sw=2
-endif
