@@ -39,9 +39,6 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 # Disable the warning when changing a file extension
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
-# Enable AirDrop over Ethernet and on unsupported Macs running Lion
-defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
-
 # Hot corners
 # Top left screen corner → Mission Control
 defaults write com.apple.dock wvous-tl-corner -int 2
