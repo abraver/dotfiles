@@ -37,6 +37,8 @@ setopt HIST_REDUCE_BLANKS
 #   like: git comm-[tab]
 setopt complete_aliases
 
+setopt noautomenu # don't jump to first completion when I tab
+
 zle -N newtab
 
 bindkey '^[^[[D' backward-word
