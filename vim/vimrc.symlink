@@ -8,6 +8,9 @@ set nocompatible	   " Use Vim defaults instead of 100% vi compatibility
 set history=50		   " keep 50 lines of command line history
 set viminfo='20,\"1000	   " read/write a .viminfo file, don't store more than
 
+" Restore the previous cursor position in the file
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+
 filetype plugin on         " enable filetype plugin
 
 " ----------------------------------------------------------------------------
