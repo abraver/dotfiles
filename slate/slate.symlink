@@ -1,0 +1,73 @@
+# General
+################################################################################
+config checkDefaultsOnLoad true
+
+alias fullscreen screenOriginX;screenOriginY screenSizeX;screenSizeY
+
+alias air11 1366x768
+alias air13 1440x900
+alias imac27 1920x1080
+alias hpzr30w 2560x1600
+
+# For 11-13" Screens
+################################################################################
+
+layout medium-screen 'Safari' move ${fullscreen}
+
+layout medium-screen 'Rdio' move ${fullscreen}
+layout medium-screen 'Rdio' hide 'Rdio'
+
+layout medium-screen 'Mail' move ${fullscreen}
+layout medium-screen 'Sparrow' move ${fullscreen}
+layout medium-screen 'Reeder' move ${fullscreen}
+layout medium-screen 'Xcode' move ${fullscreen}
+layout medium-screen 'Terminal' move ${fullscreen}
+
+layout medium-screen 'Messages':TITLE_ORDER='jabber.ign-inc.com' corner top-right resize:200;screenSizeY
+layout medium-screen 'Messages':TITLE_ORDER='Messages' corner bottom-right
+layout medium-screen 'Messages' hide 'Messages'
+
+bind i:ctrl layout medium-screen
+
+# For 27/30" Screens
+################################################################################
+
+# Center Safari window in the middle of the screen
+layout large-screen 'Safari' move screenSizeX/2-newWindowSizeX/2;0 screenSizeX/2;screenSizeY
+
+# Make Rdio slightly wider, center it
+layout large-screen 'Rdio' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1300;1000
+layout large-screen 'Rdio' hide 'Rdio'
+
+# Make mail slightly wider than half a screen, center it
+layout large-screen 'Mail' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1400;950
+layout large-screen 'Sparrow' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1400;950
+
+# Make Reeder the widest, center it
+layout large-screen 'Reeder' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1600;1000
+
+# Make Xcode fullscreen
+layout large-screen 'Xcode' move ${fullscreen}
+
+layout large-screen 'Terminal' move ${fullscreen}
+
+# Move Messages to the right corner of the screen
+layout large-screen 'Messages':TITLE_ORDER='jabber.ign-inc.com' corner top-right resize:200;800
+layout large-screen 'Messages':TITLE_ORDER='Messages' corner bottom-right
+layout large-screen 'Messages' hide 'Messages'
+
+bind e:ctrl layout large-screen
+
+# For docs and terminal side-by-side
+################################################################################
+
+layout 2-up 'Terminal' move screenOriginX;screenOriginY screenSizeX/2;screenSizeY
+layout 2-up 'Safari' move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY
+
+bind 2:ctrl layout 2-up
+
+# Set defaults, bind keyboard shortcuts
+################################################################################
+
+default medium-screen resolutions:${air13};${air11}
+default large-screen resolutions:${hpzr30w};${imac27}
