@@ -10,6 +10,7 @@ curl -O http://download.microsoft.com/download/f/5/a/f5a3df76-d856-4a61-a6bd-722
 cabextract PowerPointViewer.exe
 cabextract ppviewer.cab
 
+mkdir -p ${HOME}/Library/Fonts/
 cp *.TTF ${HOME}/Library/Fonts/
 
 rm -rf ${TMPDIR}
