@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Set user picture
-AVATAR_PATH='${HOME}/Pictures/.avatar.png'
+AVATAR_PATH="${HOME}/Pictures/.avatar.png"
 
 cp avatar.png ${AVATAR_PATH}
 dscl . delete /Users/brad Picture 
