@@ -22,6 +22,7 @@ layout medium-screen 'Sparrow' move ${fullscreen}
 layout medium-screen 'Reeder' move ${fullscreen}
 layout medium-screen 'Xcode' move ${fullscreen}
 layout medium-screen 'Terminal' move ${fullscreen}
+layout medium-screen 'Evernote' move ${fullscreen}
 
 layout medium-screen 'Messages':TITLE_ORDER='jabber.ign-inc.com' corner top-right resize:200;screenSizeY
 layout medium-screen 'Messages':TITLE_ORDER='Messages' corner bottom-right
@@ -46,10 +47,10 @@ layout large-screen 'Sparrow' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-
 # Make Reeder the widest, center it
 layout large-screen 'Reeder' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1600;1000
 
-# Make Xcode fullscreen
+# Make a few things fullscreen
 layout large-screen 'Xcode' move ${fullscreen}
-
 layout large-screen 'Terminal' move ${fullscreen}
+layout large-screen 'Evernote' move ${fullscreen}
 
 # Move Messages to the right corner of the screen
 layout large-screen 'Messages':TITLE_ORDER='jabber.ign-inc.com' corner top-right resize:200;800
