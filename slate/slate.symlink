@@ -75,5 +75,7 @@ bind 1:ctrl move ${fullscreen}
 # Set defaults, bind keyboard shortcuts
 ################################################################################
 
-default medium-screen resolutions:${air13};${air11}
-default large-screen resolutions:${hpzr30w};${imac27}
+default medium-screen resolutions:${air11}
+default medium-screen resolutions:${air13}
+default large-screen resolutions:${hpzr30w}
+default large-screen resolutions:${imac27}
