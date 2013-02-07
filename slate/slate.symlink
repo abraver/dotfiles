@@ -34,7 +34,7 @@ bind 0:ctrl layout medium-screen
 ################################################################################
 
 # Center Safari window in the middle of the screen
-layout large-screen 'Safari' move screenSizeX/2-newWindowSizeX/2;0 screenSizeX/2;screenSizeY
+layout large-screen 'Safari' move screenSizeX/2-newWindowSizeX/2;0 1280;screenSizeY
 
 # Make Rdio slightly wider, center it
 layout large-screen 'Rdio' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1300;1000
