@@ -28,7 +28,7 @@ layout medium-screen 'Messages':TITLE_ORDER='jabber.ign-inc.com' corner top-righ
 layout medium-screen 'Messages':TITLE_ORDER='Messages' corner bottom-right
 layout medium-screen 'Messages' hide 'Messages'
 
-bind i:ctrl layout medium-screen
+bind 0:ctrl layout medium-screen
 
 # For 27/30" Screens
 ################################################################################
@@ -57,7 +57,7 @@ layout large-screen 'Messages':TITLE_ORDER='jabber.ign-inc.com' corner top-right
 layout large-screen 'Messages':TITLE_ORDER='Messages' corner bottom-right
 layout large-screen 'Messages' hide 'Messages'
 
-bind e:ctrl layout large-screen
+bind 9:ctrl layout large-screen
 
 # For docs and terminal side-by-side
 ################################################################################
@@ -66,6 +66,11 @@ layout 2-up 'Terminal' move screenOriginX;screenOriginY screenSizeX/2;screenSize
 layout 2-up 'Safari' move screenOriginX+screenSizeX/2;screenOriginY screenSizeX/2;screenSizeY
 
 bind 2:ctrl layout 2-up
+
+# Fullscreen the current app
+################################################################################
+
+bind 1:ctrl move ${fullscreen}
 
 # Set defaults, bind keyboard shortcuts
 ################################################################################
