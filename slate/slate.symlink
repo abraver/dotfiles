@@ -13,6 +13,7 @@ alias hpzr30w 2560x1600
 ################################################################################
 
 layout medium-screen 'Safari' move ${fullscreen}
+layout medium-screen 'Google Chrome' move ${fullscreen}
 
 layout medium-screen 'Rdio' move ${fullscreen}
 layout medium-screen 'Rdio' hide 'Rdio'
@@ -35,6 +36,7 @@ bind 0:ctrl layout medium-screen
 
 # Center Safari window in the middle of the screen
 layout large-screen 'Safari' move screenSizeX/2-newWindowSizeX/2;0 1280;screenSizeY
+layout large-screen 'Google Chrome' move screenSizeX/2-newWindowSizeX/2;0 1280;screenSizeY
 
 # Make Rdio slightly wider, center it
 layout large-screen 'Rdio' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1300;1000
