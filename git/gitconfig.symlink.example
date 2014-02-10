@@ -12,7 +12,8 @@
         email = your@example.com
 [alias]
         co = checkout
-        st = status
+        st = status -sb
+        rework  = rebase -i @{u}
         promote = !$ZSH/bin/git-promote
         wtf     = !$ZSH/bin/git-wtf
         rank-contributers = !$ZSH/bin/git-rank-contributers
