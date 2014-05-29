@@ -19,7 +19,7 @@ virtualenv_prompt() {
 }
 
 export VIRTUAL_ENV_DISABLE_PROMPT=1
-export PROMPT=$'$(virtualenv_prompt)$(rb_prompt)%m:%c$ '
+export PROMPT=$'$(virtualenv_prompt)$(rb_prompt)$(hostname_prompt)  %c$ '
 
 precmd() {
   title "zsh" "%m" "%55<...<%~"
