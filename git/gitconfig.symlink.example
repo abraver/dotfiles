@@ -7,17 +7,17 @@
 # To set this up, rename this file to `gitconfig.symlink` and you'll be able to
 # install this to the correct location by running the project's main `rake`
 # task.
-[user]
-        name = Brad Taylor
-        email = your@example.com
 [alias]
         co = checkout
         st = status -sb
+        wat     = log origin/master.. -p
         rework  = rebase -i @{u}
-        promote = !$ZSH/bin/git-promote
         wtf     = !$ZSH/bin/git-wtf
-        rank-contributers = !$ZSH/bin/git-rank-contributers
-        count   = !git shortlog -sn
+        pb      = !git push btaylor \"$(git rev-parse --abbrev-ref HEAD)\"
+        pr      = !hub pull-request -b WhistleLabs:master -h btaylor:$(git rev-parse --abbrev-ref HEAD)
+        open    = !open https://github.com/`git ls-remote --get-url origin | cut -f 2 -d @ | cut -f 2 -d ":" | cut -f 1 -d .`
+        sweep   = !git branch --merged master | grep -v master | xargs git branch -d
+        stahs   = stash
 [color]
         diff = false
         status = auto
@@ -31,3 +31,7 @@
         user = btaylor
 [mergetool]
         keepBackup = false
+[user]
+        name = Brad Taylor
+        email = your@example.com
+        initials = bt
