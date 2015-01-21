@@ -20,6 +20,8 @@ layout medium-screen 'Rdio' hide 'Rdio'
 
 layout medium-screen 'Mail' move ${fullscreen}
 layout medium-screen 'Sparrow' move ${fullscreen}
+layout medium-screen 'Airmail' move ${fullscreen}
+layout medium-screen 'Mailbox (Beta)' move ${fullscreen}
 layout medium-screen 'Reeder' move ${fullscreen}
 layout medium-screen 'Xcode' move ${fullscreen}
 layout medium-screen 'Terminal' move ${fullscreen}
@@ -46,6 +48,8 @@ layout large-screen 'Rdio' hide 'Rdio'
 # Make mail slightly wider than half a screen, center it
 layout large-screen 'Mail' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1400;950
 layout large-screen 'Sparrow' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1400;950
+layout large-screen 'Airmail' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1400;950
+layout large-screen 'Mailbox (Beta)' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1400;950
 
 # Make Reeder the widest, center it
 layout large-screen 'Reeder' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1600;1000
