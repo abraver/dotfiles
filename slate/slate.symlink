@@ -8,6 +8,7 @@ alias air11 1366x768
 alias air13 1440x900
 alias imac27 1920x1080
 alias hpzr30w 2560x1600
+alias acerk272hul 2560x1440
 
 # For 11-13" Screens
 ################################################################################
@@ -28,9 +29,8 @@ layout medium-screen 'Terminal' move ${fullscreen}
 layout medium-screen 'Evernote' move ${fullscreen}
 layout medium-screen 'IntelliJ IDEA' move ${fullscreen}
 
-layout medium-screen 'Messages':TITLE_ORDER='jabber.ign-inc.com' corner top-right resize:200;screenSizeY
-layout medium-screen 'Messages':TITLE_ORDER='Messages' corner bottom-right
-layout medium-screen 'Messages' hide 'Messages'
+layout medium-screen 'Clear' move screenSizeX-newWindowSizeX;0 320;650
+layout medium-screen 'Messages' move screenSizeX-newWindowSizeX;screenSizeY-newWindowSizeY 500;500
 
 bind 0:ctrl layout medium-screen
 
@@ -40,6 +40,9 @@ bind 0:ctrl layout medium-screen
 # Center Safari window in the middle of the screen
 layout large-screen 'Safari' move screenSizeX/2-newWindowSizeX/2;0 1280;screenSizeY
 layout large-screen 'Google Chrome' move screenSizeX/2-newWindowSizeX/2;0 1280;screenSizeY
+
+# Make Slack a bit wider, center it
+layout large-screen 'Slack' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1200;900
 
 # Make Rdio slightly wider, center it
 layout large-screen 'Rdio' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1300;1000
@@ -51,7 +54,7 @@ layout large-screen 'Sparrow' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-
 layout large-screen 'Airmail' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1400;950
 layout large-screen 'Mailbox (Beta)' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1400;950
 
-# Make Reeder the widest, center it
+# Make Reeder even wider, center it
 layout large-screen 'Reeder' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1600;1000
 
 # Make a few things fullscreen
@@ -60,10 +63,11 @@ layout large-screen 'Terminal' move ${fullscreen}
 layout large-screen 'Evernote' move ${fullscreen}
 layout large-screen 'IntelliJ IDEA' move ${fullscreen}
 
-# Move Messages to the right corner of the screen
-layout large-screen 'Messages':TITLE_ORDER='jabber.ign-inc.com' corner top-right resize:200;800
-layout large-screen 'Messages':TITLE_ORDER='Messages' corner bottom-right
-layout large-screen 'Messages' hide 'Messages'
+# Move Clear to the top right corner of the screen
+layout large-screen 'Clear' move screenSizeX-newWindowSizeX;0 320;650
+
+# Move Messages to the bottom right corner of the screen
+layout large-screen 'Messages' move screenSizeX-newWindowSizeX;screenSizeY-newWindowSizeY 500;500
 
 bind 9:ctrl layout large-screen
 
@@ -87,3 +91,4 @@ default medium-screen resolutions:${air11}
 default medium-screen resolutions:${air13}
 default large-screen resolutions:${hpzr30w}
 default large-screen resolutions:${imac27}
+default large-screen resolutions:${acerk272hul}
