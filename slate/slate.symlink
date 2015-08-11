@@ -30,6 +30,7 @@ layout medium-screen 'Xcode' move ${fullscreen}
 layout medium-screen 'Terminal' move ${fullscreen}
 layout medium-screen 'Evernote' move ${fullscreen}
 layout medium-screen 'IntelliJ IDEA' move ${fullscreen}
+layout medium-screen 'Android Studio' move ${fullscreen}
 
 layout medium-screen 'Clear' move screenSizeX-newWindowSizeX;0 320;650
 layout medium-screen 'Messages' move screenSizeX-newWindowSizeX;screenSizeY-newWindowSizeY 500;500
@@ -66,6 +67,7 @@ layout large-screen 'Xcode' move ${fullscreen}
 layout large-screen 'Terminal' move ${fullscreen}
 layout large-screen 'Evernote' move ${fullscreen}
 layout large-screen 'IntelliJ IDEA' move ${fullscreen}
+layout large-screen 'Android Studio' move ${fullscreen}
 
 # Move Clear to the top right corner of the screen
 layout large-screen 'Clear' move screenSizeX-newWindowSizeX;0 320;650
