@@ -16,10 +16,11 @@ alias acerk272hul 2560x1440
 layout medium-screen 'Safari' move ${fullscreen}
 layout medium-screen 'Google Chrome' move ${fullscreen}
 
+layout medium-screen 'Slack' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1200;900
+
 layout medium-screen 'Rdio' move ${fullscreen}
-layout medium-screen 'Rdio' hide 'Rdio'
 layout medium-screen 'iTunes' move ${fullscreen}
-layout medium-screen 'iTunes' hide 'iTunes'
+layout medium-screen 'Spotify' move ${fullscreen}
 
 layout medium-screen 'Mail' move ${fullscreen}
 layout medium-screen 'Sparrow' move ${fullscreen}
@@ -49,9 +50,8 @@ layout large-screen 'Slack' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-ne
 
 # Make Music slightly wider, center it
 layout large-screen 'Rdio' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1300;1000
-layout large-screen 'Rdio' hide 'Rdio'
 layout large-screen 'iTunes' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1300;1000
-layout large-screen 'iTunes' hide 'iTunes'
+layout large-screen 'Spotify' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1300;1000
 
 # Make mail slightly wider than half a screen, center it
 layout large-screen 'Mail' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1400;950
