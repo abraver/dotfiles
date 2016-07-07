@@ -83,11 +83,26 @@ brew_install_or_upgrade 'postgis'
 brew_install_or_upgrade 'redis'
 
 # Casks
-brew cask install --appdir="/Applications" 'spotify'
-brew cask install --appdir="/Applications" 'vlc'
-brew cask install --appdir="/Applications" 'java'
+brew tap caskroom/versions
+
+brew cask install --appdir="/Applications" '1password'
+brew cask install --appdir="/Applications" 'airfoil'
+brew cask install --appdir="/Applications" 'airmail-beta'
+brew cask install --appdir="/Applications" 'arduino'
+brew cask install --appdir="/Applications" 'cloak'
 brew cask install --appdir="/Applications" 'dropbox'
 brew cask install --appdir="/Applications" 'firefox'
+brew cask install --appdir="/Applications" 'imagealpha'
+brew cask install --appdir="/Applications" 'java'
+brew cask install --appdir="/Applications" 'mou'
+brew cask install --appdir="/Applications" 'paw'
+brew cask install --appdir="/Applications" 'rescuetime'
+brew cask install --appdir="/Applications" 'skype'
+brew cask install --appdir="/Applications" 'slate'
+brew cask install --appdir="/Applications" 'spotify'
+brew cask install --appdir="/Applications" 'tunnelblick'
+brew cask install --appdir="/Applications" 'vlc'
+brew cask install --appdir="/Applications" 'zeplin'
 
 # Mac App Store apps
 mas install 406056744 # Evernote
