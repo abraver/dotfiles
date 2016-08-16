@@ -21,15 +21,20 @@ layout medium-screen 'Slack' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-n
 layout medium-screen 'Rdio' move ${fullscreen}
 layout medium-screen 'iTunes' move ${fullscreen}
 layout medium-screen 'Spotify' move ${fullscreen}
+layout medium-screen 'Soundnode' move ${fullscreen}
 
 layout medium-screen 'Mail' move ${fullscreen}
 layout medium-screen 'Sparrow' move ${fullscreen}
 layout medium-screen 'Airmail' move ${fullscreen}
 layout medium-screen 'Mailbox (Beta)' move ${fullscreen}
+
 layout medium-screen 'Reeder' move ${fullscreen}
+layout medium-screen 'Fantastical' move ${fullscreen}
+
 layout medium-screen 'Xcode' move ${fullscreen}
 layout medium-screen 'Terminal' move ${fullscreen}
 layout medium-screen 'Evernote' move ${fullscreen}
+layout medium-screen 'Alternote' move ${fullscreen}
 layout medium-screen 'IntelliJ IDEA' move ${fullscreen}
 layout medium-screen 'Android Studio' move ${fullscreen}
 
@@ -52,6 +57,7 @@ layout large-screen 'Slack' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-ne
 layout large-screen 'Rdio' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1300;1000
 layout large-screen 'iTunes' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1300;1000
 layout large-screen 'Spotify' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1300;1000
+layout large-screen 'Soundnode' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1300;1000
 
 # Make mail slightly wider than half a screen, center it
 layout large-screen 'Mail' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1400;950
@@ -62,10 +68,13 @@ layout large-screen 'Mailbox (Beta)' move screenSizeX/2-newWindowSizeX/2;screenS
 # Make Reeder even wider, center it
 layout large-screen 'Reeder' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1600;1000
 
+# Make Fantastical 2 the widest, center it
+layout large-screen 'Fantastical' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1700;1100
+
 # Make a few things fullscreen
 layout large-screen 'Xcode' move ${fullscreen}
 layout large-screen 'Terminal' move ${fullscreen}
-layout large-screen 'Evernote' move ${fullscreen}
+layout large-screen 'Alternote' move ${fullscreen}
 layout large-screen 'IntelliJ IDEA' move ${fullscreen}
 layout large-screen 'Android Studio' move ${fullscreen}
 
