@@ -7,6 +7,7 @@ cp avatar.png ${AVATAR_PATH}
 dscl . delete /Users/brad Picture 
 dscl . create /Users/brad Picture ${AVATAR_PATH}
 
+mkdir ~/.gradle/
 cp ../gradle/gradle.properties ~/.gradle/
 
 # Set zsh as default shell
