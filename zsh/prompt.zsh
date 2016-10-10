@@ -1,5 +1,21 @@
 autoload colors && colors
 
+hostname_prompt() {
+  HOSTNAME=`hostname | sed "s/\.local$//"`
+  if [ "${HOSTNAME}" = "pyro" ]
+  then
+    echo "🔥"
+  elif [ "${HOSTNAME}" = "rogue" ]
+  then
+    echo "🚀"
+  elif [ "${HOSTNAME}" = "cerebra" ]
+  then
+    echo "🐶"
+  else
+    echo "${HOSTNAME}"
+  fi
+}
+
 rb_prompt() {
   if $(which rbenv &> /dev/null) && $(rbenv version | awk '{print $1}' | grep -qv system)
   then
