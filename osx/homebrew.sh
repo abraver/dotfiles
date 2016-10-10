@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if [ ! -d /usr/local/Cellar ]; then
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     brew doctor
 fi
 
@@ -33,9 +33,6 @@ brew_expand_alias() {
   brew info "$1" 2>/dev/null | head -1 | awk '{gsub(/.*\//, ""); gsub(/:/, ""); print $1}'
 }
 
-cask_install_or_upgrade() {
-}
-
 # Core tools
 brew_install_or_upgrade 'grc'
 brew_install_or_upgrade 'coreutils'
@@ -45,7 +42,7 @@ brew_install_or_upgrade 'pstree'
 brew_install_or_upgrade 'docker'
 brew_install_or_upgrade 'dlite'
 brew_install_or_upgrade 'netcat'
-brew_install_or_upgrade 'argon/mas/mas'
+brew_install_or_upgrade 'mas'
 
 # Github tools
 brew_install_or_upgrade 'hub'
@@ -83,20 +80,22 @@ brew_install_or_upgrade 'postgis'
 brew_install_or_upgrade 'redis'
 
 # Casks
-brew tap caskroom/versions
-
+brew cask update
+brew cask install --appdir="/Applications" 'java'
 brew cask install --appdir="/Applications" '1password'
 brew cask install --appdir="/Applications" 'airfoil'
 brew cask install --appdir="/Applications" 'airmail-beta'
 brew cask install --appdir="/Applications" 'arduino'
 brew cask install --appdir="/Applications" 'cloak'
 brew cask install --appdir="/Applications" 'dropbox'
+brew cask install --appdir="/Applications" 'fantastical'
 brew cask install --appdir="/Applications" 'firefox'
+brew cask install --appdir="/Applications" 'google-chrome'
+brew cask install --appdir="/Applications" 'google-hangouts'
 brew cask install --appdir="/Applications" 'imagealpha'
-brew cask install --appdir="/Applications" 'java'
-brew cask install --appdir="/Applications" 'mou'
 brew cask install --appdir="/Applications" 'paw'
 brew cask install --appdir="/Applications" 'rescuetime'
+brew cask install --appdir="/Applications" 'sketch'
 brew cask install --appdir="/Applications" 'skype'
 brew cask install --appdir="/Applications" 'slate'
 brew cask install --appdir="/Applications" 'spotify'
@@ -108,12 +107,8 @@ brew cask install --appdir="/Applications" 'zeplin'
 mas install 406056744 # Evernote
 mas install 425424353 # The Unarchiver
 mas install 635758264 # Calca
-mas install 497799835 # Xcode
 mas install 880001334 # Reeder
-mas install 435003921 # Fantastical
 mas install 412056820 # Trillian
 mas install 803453959 # Slack
 mas install 420212497 # Byword
-mas install 504544917 # Clear
-mas install 448003584 # Simplify
 mas install 458034879 # Dash
