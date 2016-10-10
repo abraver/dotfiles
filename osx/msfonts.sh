@@ -11,7 +11,7 @@ cabextract PowerPointViewer.exe
 cabextract ppviewer.cab
 
 mkdir -p ${HOME}/Library/Fonts/
-cp *.TTF ${HOME}/Library/Fonts/
+sudo cp *.TTF ${HOME}/Library/Fonts/
 
 rm -rf ${TMPDIR}
 brew uninstall cabextract
