@@ -11,6 +11,9 @@ hostname_prompt() {
   elif [ "${HOSTNAME}" = "cerebra" ]
   then
     echo "🐶"
+  elif [ "${HOSTNAME}" = "polaris" ]
+  then
+    echo "🤘"
   else
     echo "${HOSTNAME}"
   fi
