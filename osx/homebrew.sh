@@ -102,6 +102,8 @@ brew cask install --appdir="/Applications" 'spotify'
 brew cask install --appdir="/Applications" 'tunnelblick'
 brew cask install --appdir="/Applications" 'vlc'
 brew cask install --appdir="/Applications" 'zeplin'
+brew cask install --appdir="/Applications" 'vagrant'
+brew cask install --appdir="/Applications" 'virtualbox'
 
 # Mac App Store apps
 mas install 406056744 # Evernote

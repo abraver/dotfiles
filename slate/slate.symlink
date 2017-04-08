@@ -6,6 +6,7 @@ alias fullscreen screenOriginX;screenOriginY screenSizeX;screenSizeY
 
 alias air11 1366x768
 alias air13 1440x900
+alias rmbp 1680x1050
 alias imac27 1920x1080
 alias hpzr30w 2560x1600
 alias acerk272hul 2560x1440
@@ -32,6 +33,7 @@ layout medium-screen 'Reeder' move ${fullscreen}
 layout medium-screen 'Fantastical' move ${fullscreen}
 
 layout medium-screen 'Xcode' move ${fullscreen}
+layout medium-screen 'Zeplin' move ${fullscreen}
 layout medium-screen 'Terminal' move ${fullscreen}
 layout medium-screen 'Evernote' move ${fullscreen}
 layout medium-screen 'Alternote' move ${fullscreen}
@@ -65,8 +67,9 @@ layout large-screen 'Sparrow' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-
 layout large-screen 'Airmail' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1400;950
 layout large-screen 'Mailbox (Beta)' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1400;950
 
-# Make Reeder even wider, center it
+# Make Reeder and Zeplin even wider, center it
 layout large-screen 'Reeder' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1600;1000
+layout large-screen 'Zeplin' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1600;1000
 
 # Make Fantastical 2 the widest, center it
 layout large-screen 'Fantastical' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1700;1100
@@ -104,6 +107,7 @@ bind 1:ctrl move ${fullscreen}
 
 default medium-screen resolutions:${air11}
 default medium-screen resolutions:${air13}
+default medium-screen resolutions:${rmbp}
 default large-screen resolutions:${hpzr30w}
 default large-screen resolutions:${imac27}
 default large-screen resolutions:${acerk272hul}
