@@ -104,6 +104,7 @@ brew cask install --appdir="/Applications" 'vlc'
 brew cask install --appdir="/Applications" 'zeplin'
 brew cask install --appdir="/Applications" 'vagrant'
 brew cask install --appdir="/Applications" 'virtualbox'
+brew cask install --appdir="/Applications" 'google-drive'
 
 # Mac App Store apps
 mas install 406056744 # Evernote
