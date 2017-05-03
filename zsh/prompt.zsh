@@ -2,16 +2,19 @@ autoload colors && colors
 
 hostname_prompt() {
   HOSTNAME=`hostname | sed "s/\.local$//"`
-  if [ "${HOSTNAME}" = "pyro" ]
+  if [[ "${HOSTNAME}" =~ "^pyro" ]]
   then
     echo "🔥"
-  elif [ "${HOSTNAME}" = "rogue" ]
+  elif [[ "${HOSTNAME}" =~ "^rogue" ]]
   then
     echo "🚀"
-  elif [ "${HOSTNAME}" = "cerebra" ]
+  elif [[ "${HOSTNAME}" =~ "^cerebra" ]]
   then
     echo "🐶"
-  elif [ "${HOSTNAME}" = "polaris" ]
+  elif [[ "${HOSTNAME}" =~ "^storm" ]]
+  then
+    echo "🌧"
+  elif [[ "${HOSTNAME}" =~ "^polaris" ]]
   then
     echo "🤘"
   else
