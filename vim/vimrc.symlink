@@ -91,3 +91,13 @@ function! StripWhitespace ()
     exec ':%s/ \+$//gc'
 endfunction
 map ,s :call StripWhitespace ()<CR>
+
+" ---------------------------------------------------------------------------
+" Set up Plug and plugs
+" ---------------------------------------------------------------------------
+call plug#begin('~/.vim/plugged')
+
+" Add TypeScript support
+Plug 'https://github.com/leafgarland/typescript-vim.git', { 'commit': '4dc79bd' }
+
+call plug#end()
