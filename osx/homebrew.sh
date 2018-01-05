@@ -115,3 +115,4 @@ mas install 412056820 # Trillian
 mas install 803453959 # Slack
 mas install 420212497 # Byword
 mas install 458034879 # Dash
+mas install 1091189122 # Bear

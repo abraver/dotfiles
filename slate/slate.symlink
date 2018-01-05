@@ -43,10 +43,15 @@ layout medium-screen 'Android Studio' move ${fullscreen}
 layout medium-screen 'Clear' move screenSizeX-newWindowSizeX;0 320;650
 layout medium-screen 'Messages' move screenSizeX-newWindowSizeX;screenSizeY-newWindowSizeY 500;500
 
+layout medium-screen 'Bear' move screenSizeX/2;0 screenSizeX/2;screenSizeY
+
 bind 0:ctrl layout medium-screen
 
 # For 27/30" Screens
 ################################################################################
+
+# Make Bear skinny and place it on the left
+layout large-screen 'Bear' move screenSizeX*2/3;0 screenSizeX/3;screenSizeY
 
 # Center Safari window in the middle of the screen
 layout large-screen 'Safari' move screenSizeX/2-newWindowSizeX/2;0 1280;screenSizeY
