@@ -67,6 +67,9 @@ defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 defaults write com.apple.dock tilesize -int 48
 defaults write com.apple.dock size-immutable -bool true
 
+# disable recently used in dock
+defaults write com.apple.dock show-recents -bool FALSE
+
 # Hot corners
 # Top left screen corner → Mission Control
 defaults write com.apple.dock wvous-tl-corner -int 2
