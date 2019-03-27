@@ -65,6 +65,7 @@ defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 
 # Set icon size of Dock items to 48 pixels
 defaults write com.apple.dock tilesize -int 48
+defaults write com.apple.dock size-immutable -bool true
 
 # Hot corners
 # Top left screen corner → Mission Control
