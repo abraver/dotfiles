@@ -7,6 +7,7 @@ alias fullscreen screenOriginX;screenOriginY screenSizeX;screenSizeY
 alias air11 1366x768
 alias air13 1440x900
 alias rmbp 1680x1050
+alias rmbp16 1792x1120
 alias imac27 1920x1080
 alias acerk272hul 2560x1440
 alias hpzr30w 2560x1600
@@ -114,6 +115,7 @@ bind 1:ctrl move ${fullscreen}
 default medium-screen resolutions:${air11}
 default medium-screen resolutions:${air13}
 default medium-screen resolutions:${rmbp}
+default medium-screen resolutions:${rmbp16}
 default large-screen resolutions:${hpzr30w}
 default large-screen resolutions:${imac27}
 default large-screen resolutions:${acerk272hul}
