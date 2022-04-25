@@ -1,0 +1,127 @@
+NSGlobalDomain:
+  # System Preferences > Keyboard > Shortcuts > Full Keyboard Access > All controls
+  AppleKeyboardUIMode: 3
+
+  # Disable press-and-hold for keys in favor of key repeat
+  ApplePressAndHoldEnabled: false
+
+  # Turn off automatic spelling correction
+  NSAutomaticSpellingCorrectionEnabled: false
+  
+  # Add a context menu item for showing the Web Inspector in web views
+  WebKitDeveloperExtras: true
+
+com.apple.LaunchServices:
+  # Disable the “Are you sure you want to open this application?” dialog
+  LSQuarantine: false
+
+com.apple.desktopservice:
+  # Disable .DS_Store files on network drives
+  DSDontWriteNetworkStores: true
+
+  # Disable .DS_Store files on external drives
+  DSDontWriteUSBStores: true
+
+com.apple.finder:
+  # Finder > View > Show view options > Sort Group By > Name.
+  FXArrangeGroupViewBy: Name
+
+  # Finder > View > Show view options > Group By > None.
+  FXPreferredGroupBy: None
+
+  # Finder > View > As List.
+  FXPreferredViewStyle: Nlsv
+
+  # Finder > Preferences > New Finder windows show > Home directory.
+  NewWindowTarget: PfHm
+
+  # Finder > Preferences > New Finder windows show > Home directory.
+  NewWindowTargetPath: "file://${HOME}"
+
+  # Finder > Preferences > Show these items on the desktop > Hard disks.
+  ShowHardDrivesOnDesktop: false
+
+  # Disable the warning when changing a file extension
+  FXEnableExtensionChangeWarning: false
+
+  # Disable the warning before emptying the trash
+  WarnOnEmptyTrash: false
+
+  # Empty Trash securely by default
+  EmptyTrashSecurely: true
+
+  # Allow text selection in Quick Look
+  QLEnableTextSelection: true
+
+com.apple.dock:
+  # Set icon size of Dock items to 48 pixels
+  tilesize: 48
+
+  # Don't allow accidental resizing of the Dock
+  size-immutable: true
+
+  # Hide recents in the Dock
+  show-recents: false
+
+  # Hot corners
+  # Top left screen corner → Mission Control
+  wvous-tl-corner: 2
+  wvous-tl-modifier: 2
+
+  # Top right screen corner → Put Display to Sleep
+  wvous-tr-corner: 10
+  wvous-tr-modifier: 0
+
+  # Bottom left screen corner → Start screen saver
+  wvous-bl-corner: 5
+  wvous-bl-modifier: 0
+
+com.apple.Safari:
+  # Use substring search by default in Safari.
+  FindOnPageMatchesWordStartsOnly: false
+
+  # Do not track
+  SendDoNotTrackHTTPHeader: true
+  
+  # Notifications
+  
+  # Don't even ask about the push notifications
+  CanPromptForPushNotifications: false
+  
+  # Extensions settings
+  
+  # Update extensions automatically
+  InstallExtensionUpdatesAutomatically: true
+  
+  # Advanced settings
+  
+  # Disable Safari’s thumbnail cache for History and Top Sites
+  DebugSnapshotsUpdatePolicy -int 2
+  
+  # Enable the Develop menu and the Web Inspector in Safari
+  IncludeDevelopMenu: true
+  WebKitDeveloperExtrasEnabledPreferenceKey: true
+  com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled: true
+  
+  # Disable autofill
+  AutoFillFromAddressBook: false
+  AutoFillPasswords: false
+  AutoFillCreditCardData: false
+  AutoFillMiscellaneousForms: false
+
+com.apple.TextEdit:
+  # TextEdit > Preferences > New Document > Plain text.
+  RichText: false
+
+com.apple.Terminal:
+  # Terminal > Secure Keyboard Entry.
+  SecureKeyboardEntry: true
+
+com.apple.SoftwareUpdate:
+  # System Preferences > Software Update > Advanced... > Automatically check
+  # for updates.
+  AutomaticCheckEnabled: true
+
+  # System Preferences > Software Update > Advanced... > Download new updates
+  # when available.
+  AutomaticDownload: true
