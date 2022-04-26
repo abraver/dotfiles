@@ -36,7 +36,7 @@ brew "postgres"
 brew "redis"
 
 # Casks
-cask "1password" unless File.exist?('/Applications/Slack.app')
+cask "1password" unless File.exist?('/Applications/1Password 7.app')
 cask "airbuddy"
 cask "cron"
 cask "deckset"
