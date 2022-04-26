@@ -1,7 +1,7 @@
 autoload colors && colors
 
 hostname_prompt() {
-  HOSTNAME=`hostname | sed "s/\.local$//"`
+  HOSTNAME=`hostname -s`
   if [[ "${HOSTNAME}" =~ "^pyro" ]]
   then
     echo "🔥"
