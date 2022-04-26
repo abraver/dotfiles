@@ -19,38 +19,29 @@ alias lgultrafine5k 3200x1800
 
 layout medium-screen 'Safari' move ${fullscreen}
 layout medium-screen 'Google Chrome' move ${fullscreen}
+layout medium-screen 'Firefox' move ${fullscreen}
 
 layout medium-screen 'Slack' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1200;900
 
-layout medium-screen 'Rdio' move ${fullscreen}
-layout medium-screen 'iTunes' move ${fullscreen}
 layout medium-screen 'Spotify' move ${fullscreen}
-layout medium-screen 'Soundnode' move ${fullscreen}
 
 layout medium-screen 'Mail' move ${fullscreen}
-layout medium-screen 'Sparrow' move ${fullscreen}
-layout medium-screen 'Airmail' move ${fullscreen}
-layout medium-screen 'Mailbox (Beta)' move ${fullscreen}
 layout medium-screen 'Superhuman' move ${fullscreen}
-layout medium-screen 'Cron' move ${fullscreen}
 
+layout medium-screen 'Notion' move ${fullscreen}
 layout medium-screen 'Reeder' move ${fullscreen}
 layout medium-screen 'Fantastical' move ${fullscreen}
+layout medium-screen 'Cron' move ${fullscreen}
 
 layout medium-screen 'Xcode' move ${fullscreen}
-layout medium-screen 'Zeplin' move ${fullscreen}
 layout medium-screen 'Terminal' move ${fullscreen}
 layout medium-screen 'Evernote' move ${fullscreen}
-layout medium-screen 'Alternote' move ${fullscreen}
 layout medium-screen 'IntelliJ IDEA' move ${fullscreen}
 layout medium-screen 'Android Studio' move ${fullscreen}
 
-layout medium-screen 'Clear' move screenSizeX-newWindowSizeX;0 320;650
 layout medium-screen 'Messages' move screenSizeX-newWindowSizeX;screenSizeY-460 500;500
 
 layout medium-screen 'Bear' move screenSizeX/2;0 screenSizeX/2;screenSizeY
-
-layout medium-screen 'Notion' move ${fullscreen}
 
 bind 0:ctrl layout medium-screen
 
