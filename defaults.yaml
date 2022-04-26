@@ -7,9 +7,21 @@ NSGlobalDomain:
 
   # Turn off automatic spelling correction
   NSAutomaticSpellingCorrectionEnabled: false
+
+  # Turn off auto-capitalization
+  NSAutomaticCapitalizationEnabled: false
+
+  # Turn off two-space => period substitution
+  NSAutomaticPeriodSubstitutionEnabled: false
+
+  # Turn off smart quotes
+  NSAutomaticQuoteSubstitutionEnabled: false
   
   # Add a context menu item for showing the Web Inspector in web views
   WebKitDeveloperExtras: true
+
+  # Disable UI sounds
+  com.apple.sound.uiaudio.enabled: false
 
 com.apple.LaunchServices:
   # Disable the “Are you sure you want to open this application?” dialog
@@ -63,10 +75,28 @@ com.apple.dock:
   # Hide recents in the Dock
   show-recents: false
 
+  # Show process indicator dots
+  show-process-indicators: true
+
   # Hot corners
+  # 
+  # Options:
+  #  0: no-op
+  #  2: Mission Control
+  #  3: Show application windows
+  #  4: Desktop
+  #  5: Start screen saver
+  #  6: Disable screen saver
+  #  7: Dashboard
+  # 10: Put display to sleep
+  # 11: Launchpad
+  # 12: Notification Center
+  # 13: Lock Screen
+  # tl, tr, bl, br
+
   # Top left screen corner → Mission Control
   wvous-tl-corner: 2
-  wvous-tl-modifier: 2
+  wvous-tl-modifier: 0
 
   # Top right screen corner → Put Display to Sleep
   wvous-tr-corner: 10
@@ -96,7 +126,7 @@ com.apple.Safari:
   # Advanced settings
   
   # Disable Safari’s thumbnail cache for History and Top Sites
-  DebugSnapshotsUpdatePolicy -int 2
+  DebugSnapshotsUpdatePolicy: 2
   
   # Enable the Develop menu and the Web Inspector in Safari
   IncludeDevelopMenu: true
