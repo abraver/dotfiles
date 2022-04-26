@@ -32,6 +32,7 @@ layout medium-screen 'Sparrow' move ${fullscreen}
 layout medium-screen 'Airmail' move ${fullscreen}
 layout medium-screen 'Mailbox (Beta)' move ${fullscreen}
 layout medium-screen 'Superhuman' move ${fullscreen}
+layout medium-screen 'Cron' move ${fullscreen}
 
 layout medium-screen 'Reeder' move ${fullscreen}
 layout medium-screen 'Fantastical' move ${fullscreen}
@@ -45,9 +46,11 @@ layout medium-screen 'IntelliJ IDEA' move ${fullscreen}
 layout medium-screen 'Android Studio' move ${fullscreen}
 
 layout medium-screen 'Clear' move screenSizeX-newWindowSizeX;0 320;650
-layout medium-screen 'Messages' move screenSizeX-newWindowSizeX;screenSizeY-newWindowSizeY 500;500
+layout medium-screen 'Messages' move screenSizeX-newWindowSizeX;screenSizeY-460 500;500
 
 layout medium-screen 'Bear' move screenSizeX/2;0 screenSizeX/2;screenSizeY
+
+layout medium-screen 'Notion' move ${fullscreen}
 
 bind 0:ctrl layout medium-screen
 
@@ -56,6 +59,7 @@ bind 0:ctrl layout medium-screen
 
 # Make Bear skinny and place it on the left
 layout large-screen 'Bear' move screenSizeX*2/3;0 screenSizeX/3;screenSizeY
+layout large-screen 'Notion' move screenSizeX*2/3;0 screenSizeX/3;screenSizeY
 
 # Center Safari window in the middle of the screen
 layout large-screen 'Safari' move screenSizeX/2-newWindowSizeX/2;0 1280;screenSizeY
