@@ -14,7 +14,10 @@ brew "wget"
 # Mac tools
 brew "duti"
 brew "mas"
-brew "dockutil"
+
+# dockutil is now distributed as a cask
+tap "hpedrorodrigues/homebrew-tools"
+cask "dockutil"
 
 # Python tools
 brew "pyenv"
@@ -32,7 +35,7 @@ brew "node"
 
 # Databases
 brew "mysql"
-brew "postgres"
+brew "postgresql@14"
 brew "redis"
 
 # Casks
@@ -49,7 +52,7 @@ cask "luna-display"
 cask "notion"
 cask "obs"
 cask "slack" unless File.exist?('/Applications/Slack.app')
-cask "slate"
+cask "mattr-slate"
 cask "spotify"
 cask "superhuman"
 cask "zoom"
