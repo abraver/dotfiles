@@ -35,6 +35,8 @@ dockutil --add /Applications/Slack.app --no-restart
 dockutil --add /Applications/Notion.app --no-restart
 dockutil --add /Applications/Reeder.app --no-restart
 dockutil --add /Applications/Spotify.app --no-restart
+dockutil --add /Applications/Sonos.app --no-restart
+dockutil --add /Applications/Bear.app --no-restart
 dockutil --add /System/Applications/Messages.app --no-restart
 dockutil --add ~/Downloads --display stack # Implicitly restarts the Dock.
 set +x
