@@ -53,8 +53,8 @@ layout large-screen 'Bear' move screenSizeX*2/3;0 screenSizeX/3;screenSizeY
 layout large-screen 'Notion' move screenSizeX*2/3;0 screenSizeX/3;screenSizeY
 
 # Center Safari window in the middle of the screen
-layout large-screen 'Safari' move screenSizeX/2-newWindowSizeX/2;0 1280;screenSizeY
-layout large-screen 'Google Chrome' move screenSizeX/2-newWindowSizeX/2;0 1280;screenSizeY
+layout large-screen 'Safari' move screenSizeX/2-newWindowSizeX/2;0 1600;screenSizeY
+layout large-screen 'Google Chrome' move screenSizeX/2-newWindowSizeX/2;0 1600;screenSizeY
 
 # Make Slack a bit wider, center it
 layout large-screen 'Slack' move screenSizeX/2-newWindowSizeX/2;screenSizeY/2-newWindowSizeY/2 1200;900
