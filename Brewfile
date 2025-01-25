@@ -1,6 +1,7 @@
 tap "homebrew/cask"
 tap "zero-sh/tap"
-
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-drivers"
 
 
 
@@ -23,7 +24,7 @@ brew "hunspell"
 brew "imagemagick"
 brew "terminal-notifier"
 brew "ytdlp"
-
+cask "dockutil"
 
 
 
@@ -127,3 +128,4 @@ mas "Spark", id: 1176895641
 mas "HomeCam", id: 1292995895
 mas "StopTheMadness", id: 1376402589
 mas "Evernote", id: 406056744
+mas "Xcode", id: 497799835
