@@ -1,67 +1,129 @@
 tap "homebrew/cask"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-drivers"
 tap "zero-sh/tap"
 
-# Core Utils
-brew "coreutils"
-brew "docker"
-brew "dos2unix"
-brew "grc"
-brew "pstree"
-brew "wget"
 
-# Mac tools
-brew "duti"
+
+
+# Core tools
+brew "z"
+brew "r"
+brew "grc"
+brew "coreutils"
+brew "dos2unix"
+brew "wget"
+brew "pstree"
 brew "mas"
 
-# dockutil is now distributed as a cask
-tap "hpedrorodrigues/homebrew-tools"
-cask "dockutil"
+
+brew "sleepwatcher" # for auto-mute when waking
+
+
+brew "git"
+brew "hunspell"
+brew "imagemagick"
+brew "terminal-notifier"
+brew "ytdlp"
+
+
+
+
+
 
 # Python tools
 brew "pyenv"
 
-# Ruby tools
-brew "rbenv"
-brew "ruby-build"
 
-# Java tools
-brew "gradle"
-brew "maven"
 
-# Javascript tools
+# Node tools
 brew "node"
 
-# Databases
-brew "mysql"
-brew "postgresql@14"
-brew "redis"
 
 # Casks
-cask "1password" unless File.exist?('/Applications/1Password 7.app')
+
+cask "1password"
 cask "airbuddy"
-cask "cron"
-cask "deckset"
-cask "descript"
+cask "airmail-beta"
+cask "alfred"
+cask "appcleaner"
+cask "audacity"
+cask "audio-hijack"
+cask "bartender"
+cask "bettertouchtool"
+cask "calibre"
+cask "cyberduck"
+cask "daisydisk"
+cask "dropbox"
 cask "evernote"
 cask "fantastical"
 cask "firefox"
+cask "freeyourmusic"
+cask "gemini"
+cask "google-drive"
 cask "google-chrome"
+cask "gpg-suite"
+cask "grandperspective"
+cask "handbrake"
+cask "helium"
+cask "imageoptim"
+cask "ipa-manager"
+cask "keyboard-cleaner"
+cask "linkliar"
 cask "logitech-options"
-cask "luna-display"
-cask "mattr-slate"
-cask "notion"
-cask "obs"
-cask "slack" unless File.exist?('/Applications/Slack.app')
-cask "sonos"
+cask "macdown"
+cask "mactex"
+cask "macdown"
+cask "macmediakeyforwarder"
+cask "microsoft-teams"  
+cask "namechanger"  
+cask "nordvpn"
+cask "omnidisksweeper"  
+cask "open-video-downloader"
+cask "pdf-expert"  
+cask "praat"
+cask "prefs-editor"    
+cask "r"
+cask "rstudio"      
+cask "signal"
+cask "skim"
+cask "skype"
+cask "slack"
+cask "sublime-text"
 cask "spotify"
-cask "superhuman"
+cask "superduper"
+cask "telegram"
+cask "transmission"
+cask "ukelele"
+cask "vidl"
+cask "vlc"
+cask "vnc-viewer"
+cask "whatsapp"
 cask "zoom"
 
-# App Store
-mas "Calca", id: 635758264
-mas "Bear", id: 1091189122
-mas "Byword", id: 420212497
-mas "Reeder", id: 880001334
-mas "Xcode", id: 497799835
+
+
+
+
+
+
+
+mas "FB messenger", id: 1480068668
+mas "Hush", id: 1544743900
+mas "The Unarchiver", id: 425424353
+mas "Pocket", id: 568494494
+mas "TripIt", id: 1475712010
+mas "QR Capture", id: 1369524274
+mas "Keyword Search", id: 1558453954
+mas "HiddenMe", id: 467040476
+mas "MS Remote desktop", id: 1295203466
+mas "MS OneDrive", id: 823766827
+mas "Amphetamine", id: 937984704
+mas "Slack", id: 803453959
+mas "1Blocker", id: 1365531024
+mas "Things 3", id: 904280696
+mas "TableFlip", id: 1462643128
+mas "Spotica Menu", id: 570549457
+mas "Keypad", id: 928906884
+mas "Spark", id: 1176895641
+mas "HomeCam", id: 1292995895
+mas "StopTheMadness", id: 1376402589
+mas "Evernote", id: 406056744

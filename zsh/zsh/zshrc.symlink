@@ -1,0 +1,49 @@
+# shortcut to this dotfiles path is $DOTZSH 
+# NB: The standard shortcut is $ZSH; I've changed
+# this to $DOTZSH so that $ZSH can work with oh-my-zsh
+export DOTZSH=$HOME/.dotfiles
+
+source "$(brew --prefix)/etc/profile.d/z.sh"
+
+
+path+=(/usr/local/bin)
+
+
+# your project folder that we can `c [tab]` to
+export PROJECTS=~/build
+
+# source every .zsh file in this rep
+for config_file ($DOTZSH/**/*.zsh) source $config_file
+
+# use .localrc for SUPER SECRET CRAP that you don't
+# want in your public, versioned repo.
+if [[ -a ~/.localrc ]]
+then
+  source ~/.localrc
+fi
+
+# initialize autocomplete here, otherwise functions won't be loaded
+autoload -U compinit
+compinit
+
+# load every completion after autocomplete loads
+for config_file ($DOTZSH/**/completion.zsh) source $config_file
+
+# Allow the z command for frecent files
+# . /usr/local/etc/profile.d/z.sh
+source "$(brew --prefix)/etc/profile.d/z.sh"
+
+#Combine mkdir and cd into one command
+function mkdircd () { mkdir -p "$@" && eval cd "\"\$$#\""; }
+
+#Homebrew casks should install into /Applications
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+eval "$(jump shell zsh)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Created by `pipx` on 2024-10-03 21:25:42
+export PATH="$PATH:/Users/abraver/.local/bin"

@@ -1,22 +1,21 @@
 autoload colors && colors
 
 hostname_prompt() {
-  HOSTNAME=`hostname -s`
-  if [[ "${HOSTNAME}" =~ "^pyro" ]]
+  # HOSTNAME=`hostname | sed "s/\.local$//"`
+  HOSTNAME=`hostname`
+  if [[ $HOSTNAME =~ "^magellan" ]]
   then
-    echo "🔥"
-  elif [[ "${HOSTNAME}" =~ "^rogue" ]]
-  then
-    echo "🚀"
-  elif [[ "${HOSTNAME}" =~ "^cerebra" ]]
-  then
-    echo "🐶"
-  elif [[ "${HOSTNAME}" =~ "^storm" ]]
-  then
-    echo "🌧"
-  elif [[ "${HOSTNAME}" =~ "^polaris" ]]
-  then
-    echo "🤘"
+    echo "🐧"
+    # echo "◉"
+  # elif [ "${HOSTNAME}" = "rogue" ]
+  # then
+  #   echo "🚀"
+  # elif [ "${HOSTNAME}" = "cerebra" ]
+  # then
+  #   echo "🐶"
+  # elif [ "${HOSTNAME}" = "polaris" ]
+  # then
+  #   echo "🤘"
   else
     echo "${HOSTNAME}"
   fi
@@ -41,7 +40,7 @@ virtualenv_prompt() {
 }
 
 export VIRTUAL_ENV_DISABLE_PROMPT=1
-export PROMPT=$'$(virtualenv_prompt)$(rb_prompt)$(hostname_prompt)  %c$ '
+export PROMPT=%K{white}%F{black}[$'$(virtualenv_prompt)$(rb_prompt)$(hostname_prompt) %(4~|…/%2~|%~)]$%f%k '
 
 precmd() {
   title "zsh" "%m" "%55<...<%~"

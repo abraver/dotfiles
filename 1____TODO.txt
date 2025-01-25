@@ -1,0 +1,31 @@
+TODO
+
+Local web server stuff
+	httpd conf files:
+		/opt/homebrew/etc/httpd/httpd.conf
+		/opt/homebrew/etc/httpd/extra/httpd-vhosts.conf
+	Symlink:
+		ln -s ~/Dropbox/abc ~/Sites/abc
+		chmod + x ~/Sites/abc
+	- Maybe don't keep the site in ~/Sites, but rather in Dropbox/Sites?
+
+
+IPA
+
+
+MANUAL INSTALL
+
+Briss2.0		https://github.com/mbaeuerle/Briss-2.0
+https://jsonwizard.app
+
+
+
+
+
+
+Bear notes / Panda markdown editor
+
+
+brew services start httpd
+
+copy over ~/latex folder

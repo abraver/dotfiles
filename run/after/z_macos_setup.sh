@@ -27,17 +27,17 @@ echo "Updating Dock..."
 
 set -x
 dockutil --remove all --no-restart
-dockutil --add /System/Applications/Utilities/Terminal.app --no-restart
 dockutil --add /Applications/Safari.app --no-restart
-dockutil --add /Applications/Superhuman.app --no-restart
-dockutil --add /Applications/Cron.app --no-restart
-dockutil --add /Applications/Slack.app --no-restart
-dockutil --add /Applications/Notion.app --no-restart
-dockutil --add /Applications/Reeder.app --no-restart
-dockutil --add /Applications/Spotify.app --no-restart
-dockutil --add /Applications/Sonos.app --no-restart
-dockutil --add /Applications/Bear.app --no-restart
+dockutil --add /Applications/Music.app --no-restart
 dockutil --add /System/Applications/Messages.app --no-restart
+dockutil --add /Applications/Spark.app --no-restart
+dockutil --add /Applications/Fantastical.app --no-restart
+dockutil --add /Applications/Todoist.app --no-restart
+dockutil --add /Applications/Photos.app --no-restart
+dockutil --add /Applications/Reminders.app --no-restart
+dockutil --add /Applications/Sublime\ Text.app --no-restart
+dockutil --add /Applications/Notes.app --no-restart
+dockutil --add /Applications/Utilities/Terminal.app --no-restart
 dockutil --add ~/Downloads --display stack # Implicitly restarts the Dock.
 set +x
 

@@ -1,0 +1,29 @@
+ADD FROM BRAD
+
+YES
+
+
+
+
+brew "pyenv"			And maybe get rid of python?
+cask "1password"
+mas "Xcode", id: 497799835
+brew "node"
+
+
+
+MAYBE
+
+cask "dockutil"
+cask "slack" unless File.exist?('/Applications/Slack.app')
+cask "notion"
+
+
+
+
+TAPS
+
+tap "homebrew/cask-fonts"
+tap "zero-sh/tap"
+tap "homebrew/cask"
+tap "homebrew/cask-drivers"
